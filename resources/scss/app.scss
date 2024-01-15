@@ -1,5 +1,26 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    background-color: lightgreen;
+    background-color: orangered
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+span{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.info{
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
 }
