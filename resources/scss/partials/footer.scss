@@ -1,0 +1,26 @@
+.cont{
+    width: 100%;
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    padding: 0.5rem;
+}
+
+.footer{
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cont-dx{
+    display: flex;
+    align-items: center;    
+}
+
+ul{
+    justify-content: space-between;
+}
+
+li{
+    margin: 0.5rem;
+}

@@ -9,6 +9,8 @@ class HomeController extends Controller
 {
     public function index(){
         $movies = Movie::all();
-        return view('home', compact('movies'));
+        $linksh = config('db.links');
+        $linksf = config('db-bottom.bottom');
+        return view('movies', compact('movies'), compact('linksf', 'linksh'));
     }
 }

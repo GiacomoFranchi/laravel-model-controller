@@ -14,4 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    $linksh = config('db.links');
+    $linksf = config('db-bottom.bottom');
+    return view('home', compact ('linksh'), compact ('linksf'));
+})->name('home');
+Route::get('/home', function () {
+    $linksf = config('db-bottom.bottom');
+    $linksh = config('db.links');
+    return view('home', compact ('linksh'), compact ('linksf'));
+})->name('home');
+
+Route::get('/movies', [HomeController::class, 'index'])->name('movies');
+
+
+Route::get('/about', function () {
+    $linksf = config('db-bottom.bottom');
+    $linksh = config('db.links');
+    return view('about', compact ('linksh'), compact ('linksf'));
+})->name('about');
+
